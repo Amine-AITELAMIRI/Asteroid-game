@@ -43,7 +43,7 @@ def main():
             for shot in shots:
                 if aster.collides_with(shot):
                     log_event("asteroid_shot")
-                    aster.kill()
+                    aster.split()
                     shot.kill()
                     break
 
